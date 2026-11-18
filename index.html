@@ -1,0 +1,138 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+
+    <meta name="viewport"
+          content="width=device-width, initial-scale=1.0">
+
+    <title>Class Catch-Up</title>
+
+    <link rel="stylesheet" href="style.css">
+</head>
+
+<body>
+
+    <header>
+        <h1>Class Catch-Up</h1>
+
+        <nav>
+            <a href="#home">Home</a>
+            <a href="#records">Class Records</a>
+            <a href="#add-record">Add Record</a>
+        </nav>
+    </header>
+
+    <main>
+
+        <section id="home">
+            <h2>Missed Class Information System</h2>
+
+            <p>
+                Review lessons, assignments, deadlines, and
+                announcements from classes you missed.
+            </p>
+
+            <a href="#records">View Class Records</a>
+            <a href="#add-record">Add a Record</a>
+        </section>
+
+        <section id="records">
+            <h2>Class Records</h2>
+
+            <input type="search"
+                   placeholder="Search by subject or topic">
+
+            <button type="button">Search</button>
+            <button type="button">Clear</button>
+
+            <article>
+                <h3>OOP 101</h3>
+
+                <p>
+                    <strong>Topic:</strong>
+                    Inheritance in Java
+                </p>
+
+                <p>
+                    <strong>Class Date:</strong>
+                    November 18, 2026
+                </p>
+
+                <p>
+                    <strong>Assignment:</strong>
+                    Create a simple inheritance example.
+                </p>
+
+                <p>
+                    <strong>Deadline:</strong>
+                    November 25, 2026
+                </p>
+
+                <button type="button">Edit</button>
+                <button type="button">Delete</button>
+            </article>
+        </section>
+
+        <section id="add-record">
+            <h2>Add Class Record</h2>
+
+            <form>
+
+                <label for="subject">Subject</label>
+
+                <input type="text"
+                       id="subject"
+                       name="subject"
+                       required>
+
+                <label for="classDate">Class Date</label>
+
+                <input type="date"
+                       id="classDate"
+                       name="classDate"
+                       required>
+
+                <label for="topic">Lesson or Topic</label>
+
+                <input type="text"
+                       id="topic"
+                       name="topic"
+                       required>
+
+                <label for="assignment">
+                    Assignment or Activity
+                </label>
+
+                <textarea id="assignment"
+                          name="assignment"
+                          rows="4"></textarea>
+
+                <label for="deadline">Deadline</label>
+
+                <input type="date"
+                       id="deadline"
+                       name="deadline">
+
+                <label for="notes">Important Notes</label>
+
+                <textarea id="notes"
+                          name="notes"
+                          rows="4"></textarea>
+
+                <button type="submit">Save Record</button>
+                <button type="reset">Clear Form</button>
+
+            </form>
+        </section>
+
+    </main>
+
+    <footer>
+        <p>Missed Class Information System</p>
+    </footer>
+
+</body>
+
+</html>
