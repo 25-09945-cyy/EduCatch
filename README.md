@@ -55,8 +55,10 @@ Main Features
 6. **File I/O** - Used Java file handling to save and load records between program sessions
 
 **Instructions for Running the Program**
+(WALA PA PO HEHE)
 
 **Sample Screenshots**
+(WALA PA PO HEHE)
 
 **Known Limitations**
 1. Data Stored in local files not a cloud database.
@@ -72,3 +74,4 @@ Main Features
 3. Ryne Gabriel M. Angeles
 
 **Projet File Structure**
+(WALA PA PO HEHE)
