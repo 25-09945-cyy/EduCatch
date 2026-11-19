@@ -45,6 +45,7 @@ Kim Cyrus G. Sasot - Lead Programmer, Main Program Flow
 Princess S. Panganiban - Assistant Programmer, Project Designer
 Ryne Gabriel M. Angeles - Programmer, Documentation
 
+
 OOP Concepts Demonstrated
 **Classes & Objects** - Created classes such as MissedClass, Lesson, Assignment, User — instantiated objects to store and manage data |
 **Encapsulation** - Used private instance variables with public getter and setter methods to protect data integrity |
