@@ -46,7 +46,7 @@ Main Features
 3. Ryne Gabriel M. Angeles - Programmer, Documentation
 
 
-OOP Concepts Demonstrated
+**OOP Concepts Demonstrated**
 1. **Classes & Objects** - Created classes such as MissedClass, Lesson, Assignment, User — instantiated objects to store and manage data 
 2. **Encapsulation** - Used private instance variables with public getter and setter methods to protect data integrity 
 3. **Inheritance** - Created a base User class with Student and ClassRecorder subclasses that inherit and extend its properties 
