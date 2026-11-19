@@ -52,5 +52,23 @@ Main Features
 3. **Inheritance** - Created a base User class with Student and ClassRecorder subclasses that inherit and extend its properties 
 4. **Abstraction** - Simplified complex operations — users interact through clear menu options without needing to know how data is stored or retrieved 
 5. **Arrays / Collections** - Used ArrayList to dynamically store and manage lists of missed class records 
-6. **File I/O** - Used Java file handling to save and load records between program sessions 
+6. **File I/O** - Used Java file handling to save and load records between program sessions
 
+**Instructions for Running the Program**
+
+**Sample Screenshots**
+
+**Known Limitations**
+1. Data Stored in local files not a cloud database.
+2. No user authentication anyone can access either role.
+
+**Future Improvements**
+1. Implement Database for better data management.
+2. Add user accounts and login authentication.
+
+**Project Contributors**
+1. Kim Cyrus G. Sasot
+2. Princess S. Panganiban
+3. Ryne Gabriel M. Angeles
+
+**Projet File Structure**
