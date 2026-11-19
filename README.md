@@ -1,10 +1,10 @@
 # EduCatch
 Missed Class Information System and Academic Catch-Up System
 
-**Project Description**
+**Project Description** -
 A console-based Java application that serves as a centralized platform where students can easily access information about classes they missed. Class recorders can post lessons, topics, activities, assignments, deadlines, and announcements, while students can view all these details anytime — making it easier to catch up on missed academic responsibilities.
 
-**Problem Being Addressed**
+**Problem Being Addressed** -
 Students who miss classes often struggle to find out what lessons were discussed, what activities or assignments were given, and what deadlines they need to meet. They usually rely on asking classmates individually, which is time-consuming and may result in incomplete or incorrect information.
 
 **Project Objectives**
