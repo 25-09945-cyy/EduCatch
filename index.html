@@ -2,136 +2,225 @@
 <html lang="en">
 
 <head>
+
     <meta charset="UTF-8">
 
     <meta name="viewport"
           content="width=device-width, initial-scale=1.0">
 
-    <title>Class Catch-Up</title>
+    <title>
+        Missed Class Information System
+    </title>
 
-    <link rel="stylesheet" href="style.css">
+    <link
+        rel="stylesheet"
+        href="style.css">
+
 </head>
 
 <body>
 
-    <header>
-        <h1>Class Catch-Up</h1>
+    <div class="prototype-tag">
+        Local Prototype • No Login
+    </div>
 
-        <nav>
-            <a href="#home">Home</a>
-            <a href="#records">Class Records</a>
-            <a href="#add-record">Add Record</a>
-        </nav>
-    </header>
+    <!-- tb -->
 
-    <main>
+    <section class="toolbar">
 
-        <section id="home">
-            <h2>Missed Class Information System</h2>
+        <!-- search sub -->
+
+        <input
+            type="text"
+            id="searchInput"
+            placeholder="Search by subject..."
+        >
+
+        <input
+            type="date"
+            id="dateFilter"
+        >
+
+        <!-- sirts -->
+
+        <button id="searchBtn">
+            Search
+        </button>
+
+        <!-- scroll form -->
+
+        <button id="focusFormBtn">
+            + Add Record
+        </button>
+
+    </section>
+
+    <!-- records area -->
+
+    <section
+        id="recordsContainer"
+        class="records-container"
+    >
+
+        <!-- empty -->
+
+        <div id="emptyState">
+
+            <div class="empty-icon">
+                📚
+            </div>
+
+            <h2>
+                No Class Records Yet
+            </h2>
 
             <p>
-                Review lessons, assignments, deadlines, and
-                announcements from classes you missed.
+                Add your first class record below
+                to share lessons, activities,
+                assignments and announcements.
             </p>
 
-            <a href="#records">View Class Records</a>
-            <a href="#add-record">Add a Record</a>
-        </section>
+        </div>
 
-        <section id="records">
-            <h2>Class Records</h2>
+    </section>
 
-            <input type="search"
-                   placeholder="Search by subject or topic">
+    <!-- rec form -->
 
-            <button type="button">Search</button>
-            <button type="button">Clear</button>
+    <section
+        id="recordFormArea"
+        class="form-section"
+    >
 
-            <article>
-                <h3>OOP 101</h3>
+        <h2>
+            Add Class Record
+        </h2>
 
-                <p>
-                    <strong>Topic:</strong>
-                    Inheritance in Java
-                </p>
+        <p class="form-subtitle">
+            Fields marked * are required.
+        </p>
 
-                <p>
-                    <strong>Class Date:</strong>
-                    November 18, 2026
-                </p>
+        <form id="recordForm">
 
-                <p>
-                    <strong>Assignment:</strong>
-                    Create a simple inheritance example.
-                </p>
+            <div class="form-grid">
 
-                <p>
-                    <strong>Deadline:</strong>
-                    November 25, 2026
-                </p>
+                <div>
 
-                <button type="button">Edit</button>
-                <button type="button">Delete</button>
-            </article>
-        </section>
+                    <label>
+                        Subject *
+                    </label>
 
-        <section id="add-record">
-            <h2>Add Class Record</h2>
+                    <input
+                        type="text"
+                        id="subject"
+                        placeholder="e.g. OOP 101"
+                        required
+                    >
 
-            <form>
+                </div>
 
-                <label for="subject">Subject</label>
+                <div>
 
-                <input type="text"
-                       id="subject"
-                       name="subject"
-                       required>
+                    <label>
+                        Assignment / Activity
+                    </label>
 
-                <label for="classDate">Class Date</label>
+                    <input
+                        type="text"
+                        id="assignment"
+                        placeholder="Enter assigned task"
+                    >
 
-                <input type="date"
-                       id="classDate"
-                       name="classDate"
-                       required>
+                </div>
 
-                <label for="topic">Lesson or Topic</label>
+                <div>
 
-                <input type="text"
-                       id="topic"
-                       name="topic"
-                       required>
+                    <label>
+                        Class Date *
+                    </label>
 
-                <label for="assignment">
-                    Assignment or Activity
-                </label>
+                    <input
+                        type="date"
+                        id="classDate"
+                        required
+                    >
 
-                <textarea id="assignment"
-                          name="assignment"
-                          rows="4"></textarea>
+                </div>
 
-                <label for="deadline">Deadline</label>
+                <div>
 
-                <input type="date"
-                       id="deadline"
-                       name="deadline">
+                    <label>
+                        Deadline
+                    </label>
 
-                <label for="notes">Important Notes</label>
+                    <input
+                        type="date"
+                        id="deadline"
+                    >
 
-                <textarea id="notes"
-                          name="notes"
-                          rows="4"></textarea>
+                </div>
 
-                <button type="submit">Save Record</button>
-                <button type="reset">Clear Form</button>
+                <div>
 
-            </form>
-        </section>
+                    <label>
+                        Lesson / Topic *
+                    </label>
 
-    </main>
+                    <input
+                        type="text"
+                        id="topic"
+                        placeholder="e.g. Inheritance in Java"
+                        required
+                    >
+
+                </div>
+
+                <div>
+
+                    <label>
+                        Notes / Announcement
+                    </label>
+
+                    <textarea
+                        id="notes"
+                        placeholder="Enter important notes"
+                    ></textarea>
+
+                </div>
+
+            </div>
+
+            <div class="form-buttons">
+
+                <button
+                    type="submit"
+                    class="save-btn"
+                >
+                    Save Record
+                </button>
+
+                <button
+                    type="reset"
+                    class="cancel-btn"
+                >
+                    Cancel
+                </button>
+
+            </div>
+
+        </form>
+
+    </section>
 
     <footer>
-        <p>Missed Class Information System</p>
+
+        Prototype:
+        Records are stored temporarily and
+        reset when the page reloads.
+
     </footer>
 
+    <script src="script.js"></script>
+
 </body>
+
 </html>
