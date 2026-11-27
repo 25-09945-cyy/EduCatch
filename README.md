@@ -42,7 +42,7 @@ Main Features
 
 **Team Members and Roles**
 1. Kim Cyrus G. Sasot - Lead Programmer, Main Program Flow
-2. Princess S. Panganiban - Assistant Programmer, Project Designer
+2. Princess S. Panganiban - Assistant Programmer, Documentation
 3. Ryne Gabriel M. Angeles - Programmer, Documentation
 
 
